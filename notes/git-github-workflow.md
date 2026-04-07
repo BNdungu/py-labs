@@ -8,26 +8,26 @@ Follow this every time you work on a new task.
 ## One-Time Setup (do this only once)
 
 ### 1. Fork the repo
-- Go to the teacher's GitHub repo
+- Go to the main GitHub repo
 - Click the **Fork** button (top right)
 - This creates your own copy of the repo under your GitHub account
 
 ### 2. Clone your fork to your computer
 ```bash
-git clone https://github.com/YOUR-USERNAME/student-tasks.git
-cd student-tasks
+git clone https://github.com/YOUR-USERNAME/python-tasks.git
+cd python-tasks
 ```
 
-### 3. Set the teacher's repo as "upstream" (so you can get new tasks later)
+### 3. Set the main repo as "upstream" (so you can get new tasks later)
 ```bash
-git remote add upstream https://github.com/TEACHER-USERNAME/student-tasks.git
+git remote add upstream https://github.com/REPO-OWNER/python-tasks.git
 ```
 
 ---
 
 ## Every Task — Step by Step
 
-### Step 1: Get the latest tasks from the teacher
+### Step 1: Get the latest tasks
 ```bash
 git fetch upstream
 git merge upstream/master
@@ -69,11 +69,11 @@ git push origin task-01
 ### Step 6: Open a Pull Request
 - Go to your fork on GitHub
 - You'll see a yellow banner saying **"Compare & pull request"** — click it
-- Set the base repo to the teacher's repo, base branch `master`
+- Set the base repo to the main repo, base branch `master`
 - Title it clearly: `Task 01 - Variables and Input`
 - Click **Create Pull Request**
 
-Your teacher will review your code and leave comments. If changes are needed,
+Your code will be reviewed and comments left. If changes are needed,
 edit your `solution.py`, then run:
 ```bash
 git add tasks/task_01_variables_and_input/solution.py
@@ -93,8 +93,8 @@ The PR updates automatically.
 | `git commit -m "message"` | Save a snapshot with a message |
 | `git push origin <branch>` | Upload your branch to GitHub |
 | `git checkout -b <name>` | Create and switch to a new branch |
-| `git fetch upstream` | Download new tasks from the teacher |
-| `git merge upstream/master` | Apply the teacher's updates to your copy |
+| `git fetch upstream` | Download new tasks from upstream |
+| `git merge upstream/master` | Apply upstream updates to your copy |
 | `git log --oneline` | See your commit history |
 
 ---
